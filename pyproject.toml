@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "b9ui"
+version = "0.1.0"
+description = "The Next.js like Python framework"
+authors = ["Basri <h@basri.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = "^0.29.0"
+ludic = "^0.3.0"
+starlette = "^0.37.2"
+typeguard = "^4.2.1"
+
+[tool.poetry.scripts]
+dashboard05 = "examples.dashboard05.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
